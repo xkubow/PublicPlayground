@@ -28,9 +28,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans.Migration.Runner", "Orleans\JK.Orleans.Migration.Runner\JK.Orleans.Migration.Runner.csproj", "{BF0E91FE-96D9-40C0-9934-4984C35827B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kafka", "Kafka", "{D53EF471-49C2-4220-BF7F-131F722B443F}"
-	ProjectSection(SolutionItems) = preProject
-		Kafka\stop.sh = Kafka\stop.sh
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaProducer", "Kafka\KafkaProducer\KafkaProducer.csproj", "{C5CE8F7C-D879-4971-B236-8B0ECCB0B849}"
 EndProject
@@ -38,10 +35,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaConsumer", "Kafka\Kafk
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOps", "DevOps", "{512F9E06-AEE4-4F8E-8442-22B37554F509}"
 	ProjectSection(SolutionItems) = preProject
-		Kafka\docker-compose.yml = Kafka\docker-compose.yml
-		Kafka\Kafka.md = Kafka\Kafka.md
-		Kafka\setup-kafka.sh = Kafka\setup-kafka.sh
-		Kafka\start.sh = Kafka\start.sh
+		Kafka\DevOps\docker-compose.yml = Kafka\DevOps\docker-compose.yml
+		Kafka\DevOps\Kafka.md = Kafka\DevOps\Kafka.md
+		Kafka\DevOps\setup-kafka.sh = Kafka\DevOps\setup-kafka.sh
+		Kafka\DevOps\start.sh = Kafka\DevOps\start.sh
+		Kafka\DevOps\stop.sh = Kafka\DevOps\stop.sh
 	EndProjectSection
 EndProject
 Global
