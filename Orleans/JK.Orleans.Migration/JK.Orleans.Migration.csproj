@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="5.2.0" />
+    <PackageReference Include="FluentMigrator.Runner" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="*.sql" />
+    <EmbeddedResource Include="Migrations\_0001_CreateOrleansMain_Down.sql" />
+    <EmbeddedResource Include="Migrations\_0001_CreateOrleansMain_Up.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\_0002_CreateOrleansPersistence_Down.sql" />
+    <EmbeddedResource Include="Migrations\_0002_CreateOrleansPersistence_Up.sql" />
+    <EmbeddedResource Include="Migrations\_0003_CreateOrleansReminders_Down.sql" />
+    <EmbeddedResource Include="Migrations\_0003_CreateOrleansReminders_Up.sql" />
+    <EmbeddedResource Include="Migrations\_0004_UpdateOrleansMembershipTable_Up.sql" />
+    <None Remove="Migrations\SQLServer-Clustering.sql" />
+    <EmbeddedResource Include="Migrations\SQLServer-Clustering.sql" />
+    <None Remove="Migrations\SQLServer-Main.sql" />
+    <EmbeddedResource Include="Migrations\SQLServer-Main.sql" />
+    <None Remove="Migrations\SQLServer-Persistence.sql" />
+    <EmbeddedResource Include="Migrations\SQLServer-Persistence.sql" />
+    <None Remove="Migrations\SQLServer-Reminders.sql" />
+    <EmbeddedResource Include="Migrations\SQLServer-Reminders.sql" />
+  </ItemGroup>
+
+</Project>

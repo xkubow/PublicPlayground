@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Core\JK.Platform.Core.AspNetCore.Abstractions\JK.Platform.Core.AspNetCore.Abstractions.csproj" />
+      <ProjectReference Include="..\..\..\Core\JK.Platform.Core.Instrumentation\JK.Platform.Core.Instrumentation.csproj" />
+      <ProjectReference Include="..\..\..\Core\JK.Platform.Core\JK.Platform.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.76.0" />
+      <PackageReference Include="Grpc.Net.Client" Version="2.76.0" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    </ItemGroup>
+
+</Project>

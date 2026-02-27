@@ -1,0 +1,53 @@
+# .gitignore
+# Common output and log files
+*.log
+*.output.txt
+*.out
+*.tmp
+*.bak
+
+## .NET / Visual Studio / Rider
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]est[Rr]esults/
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.dbmdl
+*.jfm
+
+## OS Files
+.DS_Store
+Thumbs.db
+
+## Packages
+*.nupkg
+*.snupkg
+packages/
+
+## Rider specific
+.idea/
+*.sln.iml
+.idea.JK.Platform.Core.AspNetCore.Abstractions/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## MSBuild
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.dbmdl
+*.jfm

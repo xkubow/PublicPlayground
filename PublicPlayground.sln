@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{4B74B47E-B241-42F7-9963-254C1F6ADE5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grpc", "Grpc", "{EEC8969C-5C9E-4799-AA81-9A26FA2242EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Platform.Api.Grpc.Client", "Api\Grpc\JK.Platform.Api.Grpc.Client\JK.Platform.Api.Grpc.Client.csproj", "{43AB3092-DA59-45F1-81CB-3B9BF973A0B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7AF44667-A602-4FA3-85DB-92879AF577ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Platform.Core", "Core\JK.Platform.Core\JK.Platform.Core.csproj", "{974A3DDD-56FD-44A3-8D9D-C5FA63FA9D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Platform.Core.AspNetCore.Abstractions", "Core\JK.Platform.Core.AspNetCore.Abstractions\JK.Platform.Core.AspNetCore.Abstractions.csproj", "{B1FA62FD-81B5-4E02-BE2C-A0564FE6B3A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Platform.Core.Instrumentation", "Core\JK.Platform.Core.Instrumentation\JK.Platform.Core.Instrumentation.csproj", "{8D4BDE3A-1806-46BF-A154-D8E5ECDF2A1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orleans", "Orleans", "{C2C4E589-2945-4417-88A1-1463787D7543}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans", "Orleans\JK.Orleans\JK.Orleans.csproj", "{EB174B08-BBDC-4007-8427-61DAA7AA65B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans.Client", "Orleans\JK.Orleans.Client\JK.Orleans.Client.csproj", "{38F95261-1C2F-4012-81A8-4DAB02C6908F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans.Migration", "Orleans\JK.Orleans.Migration\JK.Orleans.Migration.csproj", "{5CA2D187-DCB1-4ACF-A811-5462C5739E33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans.Migration.Runner", "Orleans\JK.Orleans.Migration.Runner\JK.Orleans.Migration.Runner.csproj", "{BF0E91FE-96D9-40C0-9934-4984C35827B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43AB3092-DA59-45F1-81CB-3B9BF973A0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AB3092-DA59-45F1-81CB-3B9BF973A0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AB3092-DA59-45F1-81CB-3B9BF973A0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AB3092-DA59-45F1-81CB-3B9BF973A0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974A3DDD-56FD-44A3-8D9D-C5FA63FA9D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974A3DDD-56FD-44A3-8D9D-C5FA63FA9D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974A3DDD-56FD-44A3-8D9D-C5FA63FA9D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974A3DDD-56FD-44A3-8D9D-C5FA63FA9D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FA62FD-81B5-4E02-BE2C-A0564FE6B3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FA62FD-81B5-4E02-BE2C-A0564FE6B3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FA62FD-81B5-4E02-BE2C-A0564FE6B3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FA62FD-81B5-4E02-BE2C-A0564FE6B3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4BDE3A-1806-46BF-A154-D8E5ECDF2A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4BDE3A-1806-46BF-A154-D8E5ECDF2A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4BDE3A-1806-46BF-A154-D8E5ECDF2A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4BDE3A-1806-46BF-A154-D8E5ECDF2A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB174B08-BBDC-4007-8427-61DAA7AA65B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB174B08-BBDC-4007-8427-61DAA7AA65B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB174B08-BBDC-4007-8427-61DAA7AA65B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB174B08-BBDC-4007-8427-61DAA7AA65B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F95261-1C2F-4012-81A8-4DAB02C6908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F95261-1C2F-4012-81A8-4DAB02C6908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F95261-1C2F-4012-81A8-4DAB02C6908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F95261-1C2F-4012-81A8-4DAB02C6908F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA2D187-DCB1-4ACF-A811-5462C5739E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA2D187-DCB1-4ACF-A811-5462C5739E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA2D187-DCB1-4ACF-A811-5462C5739E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA2D187-DCB1-4ACF-A811-5462C5739E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEC8969C-5C9E-4799-AA81-9A26FA2242EF} = {4B74B47E-B241-42F7-9963-254C1F6ADE5B}
+		{43AB3092-DA59-45F1-81CB-3B9BF973A0B3} = {EEC8969C-5C9E-4799-AA81-9A26FA2242EF}
+		{974A3DDD-56FD-44A3-8D9D-C5FA63FA9D10} = {7AF44667-A602-4FA3-85DB-92879AF577ED}
+		{B1FA62FD-81B5-4E02-BE2C-A0564FE6B3A8} = {7AF44667-A602-4FA3-85DB-92879AF577ED}
+		{8D4BDE3A-1806-46BF-A154-D8E5ECDF2A1C} = {7AF44667-A602-4FA3-85DB-92879AF577ED}
+		{EB174B08-BBDC-4007-8427-61DAA7AA65B4} = {C2C4E589-2945-4417-88A1-1463787D7543}
+		{38F95261-1C2F-4012-81A8-4DAB02C6908F} = {C2C4E589-2945-4417-88A1-1463787D7543}
+		{5CA2D187-DCB1-4ACF-A811-5462C5739E33} = {C2C4E589-2945-4417-88A1-1463787D7543}
+		{BF0E91FE-96D9-40C0-9934-4984C35827B9} = {C2C4E589-2945-4417-88A1-1463787D7543}
+	EndGlobalSection
+EndGlobal
