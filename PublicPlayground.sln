@@ -27,6 +27,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans.Migration", "Orl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JK.Orleans.Migration.Runner", "Orleans\JK.Orleans.Migration.Runner\JK.Orleans.Migration.Runner.csproj", "{BF0E91FE-96D9-40C0-9934-4984C35827B9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kafka", "Kafka", "{D53EF471-49C2-4220-BF7F-131F722B443F}"
+	ProjectSection(SolutionItems) = preProject
+		Kafka\stop.sh = Kafka\stop.sh
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaProducer", "Kafka\KafkaProducer\KafkaProducer.csproj", "{C5CE8F7C-D879-4971-B236-8B0ECCB0B849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaConsumer", "Kafka\KafkaConsumer\KafkaConsumer.csproj", "{CE94DE85-942E-457B-AD28-D26D19541B8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevOps", "DevOps", "{512F9E06-AEE4-4F8E-8442-22B37554F509}"
+	ProjectSection(SolutionItems) = preProject
+		Kafka\docker-compose.yml = Kafka\docker-compose.yml
+		Kafka\Kafka.md = Kafka\Kafka.md
+		Kafka\setup-kafka.sh = Kafka\setup-kafka.sh
+		Kafka\start.sh = Kafka\start.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +85,14 @@ Global
 		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF0E91FE-96D9-40C0-9934-4984C35827B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CE8F7C-D879-4971-B236-8B0ECCB0B849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CE8F7C-D879-4971-B236-8B0ECCB0B849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CE8F7C-D879-4971-B236-8B0ECCB0B849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CE8F7C-D879-4971-B236-8B0ECCB0B849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE94DE85-942E-457B-AD28-D26D19541B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE94DE85-942E-457B-AD28-D26D19541B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE94DE85-942E-457B-AD28-D26D19541B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE94DE85-942E-457B-AD28-D26D19541B8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EEC8969C-5C9E-4799-AA81-9A26FA2242EF} = {4B74B47E-B241-42F7-9963-254C1F6ADE5B}
@@ -79,5 +104,8 @@ Global
 		{38F95261-1C2F-4012-81A8-4DAB02C6908F} = {C2C4E589-2945-4417-88A1-1463787D7543}
 		{5CA2D187-DCB1-4ACF-A811-5462C5739E33} = {C2C4E589-2945-4417-88A1-1463787D7543}
 		{BF0E91FE-96D9-40C0-9934-4984C35827B9} = {C2C4E589-2945-4417-88A1-1463787D7543}
+		{C5CE8F7C-D879-4971-B236-8B0ECCB0B849} = {D53EF471-49C2-4220-BF7F-131F722B443F}
+		{CE94DE85-942E-457B-AD28-D26D19541B8C} = {D53EF471-49C2-4220-BF7F-131F722B443F}
+		{512F9E06-AEE4-4F8E-8442-22B37554F509} = {D53EF471-49C2-4220-BF7F-131F722B443F}
 	EndGlobalSection
 EndGlobal
